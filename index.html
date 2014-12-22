@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style type="text/css" media="screen">
+        html {
+          font-family: monospace;
+        }
+
+        main {
+          width: 70%;
+        }
+        .welcome {
+           max-width: 750px;
+           margin: 0 auto;
+        }
+
+        .colorpicker {
+          position: absolute;
+          left: -5000px;
+        }
+
+        li {
+          list-style: none;
+          padding: 10px;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Configure .Xdefaults</h1>
+      <input class="colorpicker" name="colorpicker" type="color"/>
+      <input class="upload" name="file" type="file"/>
+      <a class="load-sample" href="javascript:void(0)">Load a sample
+          .Xdefaults file</a>
+      <a class="export" href="javascript:void(0)">export</a>
+      <main>
+        <section class="defaults" contentEditable>
+          <div class="welcome">
+            <h3>Welcome,</h3>
+            <p>This is a simple tool for editing your <a href="http://linux.die.net/man/7/urxvt">.Xdefaults</a>.
+              The goal of this was to create a quicker way to update my urxvt theme. Another way (for emacs users)
+              would be to open it up in "rainbox-mode".
+              Depending on your distro you may want to be editing your ".xResources" file instead.
+
+              Go Ahead and Paste a file into this window, upload your ~.Xdefaults, or load the sample file.</p>
+            </p>
+          </div>
+        </section>
+      </main>
+      <script type="text/javascript" src="colors.js"></script>
+    </body>
+</html>
