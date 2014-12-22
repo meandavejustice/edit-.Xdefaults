@@ -73,7 +73,6 @@ loadSampleLink.addEventListener('click', function() {
 
 exportLink.addEventListener('click', function() {
   var content = contentArea.textContent;
-  debugger;
   var blob = new Blob([content], { type : "text/plain"});
   var url = (window.URL || window.webkitURL).createObjectURL(blob);
   var link = window.document.createElement('a');
