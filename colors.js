@@ -62,7 +62,7 @@ uploader.addEventListener('change', function(ev) {
 
 loadSampleLink.addEventListener('click', function() {
   var req = new XMLHttpRequest();
-  req.open('GET', '/sample-Xdefaults.txt', true);
+  req.open('GET', '/edit-.Xdefaults/sample-Xdefaults.txt', true);
   var self = this;
   req.onloadend = function(ev) {
     formatFile(ev.target.response);
